@@ -17,7 +17,7 @@ myArr.pop() // remove the last element of array
 
 //myArr.unshift(9) // add element on the first
 
-myArr.shift()
+myArr.shift() //Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 console.log(myArr)
 
 // console.log(myArr.includes(9)) // return true if element include in array
