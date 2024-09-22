@@ -1,6 +1,5 @@
 //const tinderUser = new Object() // singleton object
-
-const tinderUser = {} //non singleton
+const tinderUser = {}  //non singleton
 tinderUser.id = "123Abc"
 tinderUser.name = "pradeep"
 tinderUser.isLoggedIn = true
@@ -39,11 +38,37 @@ const user =[
        
     },
 ]
-user[1].email
+// user[1].email
 
-console.log(tinderUser)
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser)) //return in key values
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser))
+// console.log(Object.entries(tinderUser)) //return in key values
 
-console.log(tinderUser.hasOwnProperty('isLogged')) //return boolean if is has a value 
+//console.log(tinderUser.hasOwnProperty('isLogged')) //return boolean if is has a value 
+
+
+
+//*********************************destructure the object ********************************** */
+
+
+const course ={
+    coursename:"js in hindi",
+    price :"999",
+    courseInstructor:"hitesh"
+}
+//course.courseInstructor
+
+const {courseInstructor : instructor} = course
+console.log(instructor)
+
+// {
+//     "coursename": "js in hindi",
+//     "price" : "999",
+//     "courseInstructor" :"hitesh"
+// }
+// [
+//     {};
+//     {},
+//     {}
+// ]
